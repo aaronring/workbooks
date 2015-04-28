@@ -562,6 +562,33 @@
         <cols>[textscan.42121.647912557870].[usr:Calculation_3640427153322603:qk]</cols>
       </table>
     </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AnalyticsComplete2' name='textscan.42121.647912557870' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.42121.647912557870'>
+            <column datatype='real' name='[GLA]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[GLA]' derivation='Sum' name='[sum:GLA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[textscan.42121.647912557870].[sum:GLA:qk]</rows>
+        <cols></cols>
+      </table>
+    </worksheet>
   </worksheets>
   <dashboards>
     <dashboard name='Corr'>
@@ -596,7 +623,7 @@
   </dashboards>
   <windows>
     <window class='schema' source-height='-1' />
-    <window auto-hidden='0' class='worksheet' maximized='1' name='Correlations'>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Correlations'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -621,16 +648,36 @@
         </edge>
       </cards>
     </window>
-    <window auto-hidden='0' class='dashboard' maximized='0' name='Corr'>
+    <window auto-hidden='0' class='dashboard' maximized='1' name='Corr'>
       <zones>
         <zone name='Correlations'>
           <viewpoint>
             <zoom type='entire-view' />
           </viewpoint>
         </zone>
+        <zone fixed-size='22' h='5668' id='8' is-fixed='true' name='' type='empty' w='16000' x='84000' y='0' />
         <zone mode='compact' name='' param='[Parameters].[Parameter 1]' type='paramctrl' />
         <zone mode='compact' name='' param='[Parameters].[Parameter 2]' type='paramctrl' />
       </zones>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
     </window>
   </windows>
   <thumbnails>
@@ -894,6 +941,36 @@
       voEMtJ0gJCDmjvJ0f2uzVEkJgJtwDi/6TRE2StPknt3ahRA+1NFpKtllNx+y5Vtns60XIANt
       K9R6c5WI4YqKxGLGNT1v0avi8SK1UhGOpZQ0l0hJSu3qpDRBqqwAAKnaaATSbEtGnWgEHO+3
       QIFAIBQKZVcKIhd530A8z8NvdEV8AEFLWhFQ/H+0xc1wKVILwQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='107'>
+      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
     </thumbnail>
   </thumbnails>
 </workbook>
